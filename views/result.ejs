@@ -1,0 +1,24 @@
+<%-include("header")-%>
+<h2 class="head">RESULTS OF SPORTS DAY (2020)</h2>
+<% post.forEach(function(posts){%>
+  <h3><%=posts.event%></h3>
+  <table class="table table-dark">
+  <thead>
+    <tr>
+      <th scope="col">#Position</th>
+      <th scope="col">Player</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <th scope="row"><%=posts.positionA%></th>
+      <td><%=posts.playerA%></td>
+    </tr>
+    <tr>
+      <th scope="row"><%=posts.positionB%></th>
+      <td><%=posts.playerB%></td>
+    </tr>
+  </tbody>
+</table>
+<%});%>
+<%-include("footer")-%>
